@@ -1,0 +1,30 @@
+<form action="/result" method="post">
+<body>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<br>
+<font size="2" face="Arial">
+StackoverFlow, générateur de tags<br><br>
+Posez votre question ici :
+
+</p>
+	<br>
+    <div>
+        <label for="question"><font size="2" face="Arial"><B>Question :</B></font><BR></label>
+        <input type="text" id="question" name="question" required>
+    </div>
+	<p>
+	
+
+	
+	</p>
+	<div>
+		<input type="submit" value="Générer des tags" id="bouton" name="bouton">
+	</div>
+	{% if result %}
+	<div>
+			<p><br>Nous vous recommandons d'ajouter les tags suivants : {{ result }}. </p>
+	</div>
+	{% endif %}
+	
+	</body>
+</form>
