@@ -110,6 +110,6 @@ def predict(question):
                         
         tags = " ".join(list_words)
                 
-    return tags
+    return text
     
 
